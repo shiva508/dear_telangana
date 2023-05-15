@@ -3,7 +3,14 @@ server:
 spring:
   application:
     name: dear_telangana
-
+  datasource:
+    username: keycloak
+    password: keycloak
+    url: jdbc:postgresql://localhost:5432/keycloak
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
 com:
   data: shiva
 
